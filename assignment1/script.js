@@ -23,7 +23,7 @@ class Utils {
   };
 
   isObject = (value) => {
-    return typeof(value) === "object" && !this.isNull(value)
+    return typeof(value) === "object" && !this.isNull(value) && !this.isArray(value);
   };
 
   isArray = (value) => {
