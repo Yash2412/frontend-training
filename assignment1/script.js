@@ -128,7 +128,7 @@ function findStats(definition) {
     objects: 0,
     array: 0,
     truthy: 0,
-    falsy: 1,
+    falsy: 0,
   };
 
   /**
