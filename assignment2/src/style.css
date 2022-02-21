@@ -1,0 +1,44 @@
+body {
+  background-color: #f5f5f5;
+}
+.bg-white {
+  background-color: #fff;
+}
+.movie-info img {
+  max-width: 100%;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-details .more-details{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+.backdrop {
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.custom-modal {
+  z-index: 100;
+}
+
+.custom-modal .card {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boxoffice {
+  float: right;
+}
