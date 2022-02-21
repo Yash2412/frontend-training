@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "../style.css";
 import FormInput from "./FormInput";
-import { Modal } from "./Modal";
-import MovieCard from "./MovieCard";
 import MovieList from "./MovieList";
 import { Pagination } from "./Pagination";
 import { ApiResponseType, MovieInfo } from "./Types";
