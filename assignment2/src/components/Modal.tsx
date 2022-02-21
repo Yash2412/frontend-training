@@ -10,7 +10,7 @@ export const Modal: FunctionComponent<Iprops> = ({ imdbID, setShowModal }) => {
   const [movieDetails, setMovieDetails] = useState({} as FullMovieDetails);
   const getApiResponse = async () => {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${imdbID}&apikey=375555b6`
+      `https://www.omdbapi.com/?i=${imdbID}&apikey=375555b6`
     );
     const json: FullMovieDetails = await response.json();
 
