@@ -7,7 +7,6 @@ type IProps = {
 };
 
 const MovieList: React.FunctionComponent<IProps> = ({ moviesList }) => {
-  console.log("first");
   return (
     <div>
       {moviesList.map((movie: MovieInfo) => {

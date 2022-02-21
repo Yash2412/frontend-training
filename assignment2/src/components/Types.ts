@@ -13,16 +13,16 @@ export interface ApiResponseType {
   Error?: string;
 }
 
-export interface FullMovieDetails{
-  Title: string,
-  Released: string,
-  Genre: string,
-  Director: string,
-  Writer: string,
-  Actors: string,
-  Plot: string,
-  imdbRating: string,
-  Response: string,
-  Poster: string,
-  imdbVotes: string
+export interface FullMovieDetails {
+  Title: string;
+  Released: string;
+  Genre: string;
+  Director: string;
+  Writer: string;
+  Actors: string;
+  Plot: string;
+  imdbRating: string;
+  Response: string;
+  Poster: string;
+  imdbVotes: string;
 }

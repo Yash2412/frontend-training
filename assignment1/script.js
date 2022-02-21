@@ -138,9 +138,7 @@ function findStats(definition) {
    */
   stats.numberOfItems = instance.size(definition);
 
-  for(let i= 0; i < stats.numberOfItems; i++){
-    let data = definition[i];
-
+  for(let data of definition){
     let coll = instance.values(data);
 
     stats.null += instance.filter(coll, instance.isNull);
@@ -153,6 +151,22 @@ function findStats(definition) {
     stats.truthy += instance.filter(coll, instance.isTruthy);
     stats.falsy += instance.filter(coll, instance.isFalsy);
   }
+
+  // for(let i= 0; i < stats.numberOfItems; i++){
+  //   let data = definition[i];
+
+  //   let coll = instance.values(data);
+
+  //   stats.null += instance.filter(coll, instance.isNull);
+  //   stats.undefined += instance.filter(coll, instance.isUndefined);
+  //   stats.numbers += instance.filter(coll, instance.isNumber);
+  //   stats.strings += instance.filter(coll, instance.isString);
+  //   stats.boolean += instance.filter(coll, instance.isBoolean);
+  //   stats.objects += instance.filter(coll, instance.isObject);
+  //   stats.array += instance.filter(coll, instance.isArray);
+  //   stats.truthy += instance.filter(coll, instance.isTruthy);
+  //   stats.falsy += instance.filter(coll, instance.isFalsy);
+  // }
 
   return stats;
 }

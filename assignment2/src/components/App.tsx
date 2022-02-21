@@ -18,7 +18,7 @@ function App() {
 
   const getApiResponse = async () => {
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${movieName}&y=${movieYear}&page=${pageNumber}&plot&apikey=375555b6`
+      `https://www.omdbapi.com/?s=${movieName}&y=${movieYear}&page=${pageNumber}&plot&apikey=375555b6`
     );
     const json: ApiResponseType = await response.json();
     console.log(json);
@@ -47,13 +47,12 @@ function App() {
           apiResponse.Search &&
           apiResponse.totalResults ? (
             <>
-              <MovieList moviesList={apiResponse.Search}/>
-                <Pagination
-                  pageNumber={pageNumber}
-                  setPageNumber={setPageNumber}
-                  totalResult={+apiResponse.totalResults}
-                />
-              
+              <MovieList moviesList={apiResponse.Search} />
+              <Pagination
+                pageNumber={pageNumber}
+                setPageNumber={setPageNumber}
+                totalResult={+apiResponse.totalResults}
+              />
             </>
           ) : (
             <h3 className="text-center">{apiResponse.Error}</h3>
