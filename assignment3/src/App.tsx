@@ -30,6 +30,7 @@ export default class App extends Component<iProps, iState> {
 					<InputForm setInput={this.setInput} />
 					<Divider />
 					<MovieList pMovieName={this.state.sMovieName} pMovieYear={this.state.sMovieYear} />
+					<Divider />
 				</Space>
 			</Row>
 		);
